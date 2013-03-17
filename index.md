@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Recent Posts
+title: Dustin's Awesome Programming Blog
 tagline: 
 ---
 {% include JB/setup %}
