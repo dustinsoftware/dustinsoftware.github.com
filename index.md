@@ -5,7 +5,7 @@ tagline:
 ---
 {% include JB/setup %}
 
-This is the personal blog of Dustin Masters.  Read more about me on the [About Page](about.html).
+This is the personal blog of Dustin Masters.  Read more about me on the [About Page](about).
 
 ---
 
