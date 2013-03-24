@@ -18,4 +18,4 @@ Timing was extremely important on the Arduino, so interrupts had to be disabled.
 
 Overall, the project was a tremendous success, and even with two computers sitting between the classic controller and the N64, I was able to get the delay below 20 ms!
 
-[The source code for the entire project is available on GitHub.](https://github.com/dustinsoftware/N64Controller)
+[The source code for the entire project is available on GitHub.](https://github.com/dustinsoftware/N64ClassicController)
