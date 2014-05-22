@@ -9,6 +9,7 @@ group: navigation
 
 Here's a few of the projects I've worked on, for the curious:
 
+* [Javascript MS-DOS Simulator](http://www.dustinsoftware.com/console) - Exactly what it sounds like
 * [N64 Classic Controller](http://www.dustinsoftware.com/2013/03/23/n64-classic-controller/) - Use an Arduino and C# to simulate an N64 controller hardware.
 * [HD44780 Clock](https://github.com/dustinsoftware/Arduino/tree/master/dpmclock) - Arduino powered.  For my wife :)
 * [iLETU](http://itunes.apple.com/us/app/iletu/id522153564?mt=8) - iPhone/iPad app for the LeTourneau University community ([Newspaper article](http://letuyellowjacket.org/2012/04/04/tech-review-iletu-app/), [website video](http://www.letu.edu/highlights/DustinMasters.html))
