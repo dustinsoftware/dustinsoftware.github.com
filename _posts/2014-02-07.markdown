@@ -1,0 +1,24 @@
+---
+date: 2014-2-7
+layout: post
+slug: nop
+title: NOP Instructions in .NET
+---
+
+When compiled, when is this...
+
+```
+if (foo == bar)
+{
+  DoAction();
+}
+```
+
+...different from this?
+
+```
+if (foo == bar)
+  DoAction();
+```
+
+The compiler generates NOP instructions when building in Debug mode when braces are present, allowing a breakpoint to be set.  When building in Release mode, however, these two blocks of code generate the same IL.

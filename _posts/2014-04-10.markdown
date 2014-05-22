@@ -1,0 +1,32 @@
+---
+date: 2014-4-10
+layout: post
+slug: utf8mysql
+title: UTF-8, MySQL, and you
+---
+
+A couple gotcha's I ran into recently:
+
+### MySQL.Data does not handle storing UTF-8 strings correctly by default.
+
+It will turn this:
+
+> logos = λόγος
+
+Into this:
+
+> logos = ?????
+
+To avoid MySQL.Data silently dropping UTF-8 characters, make sure your connection string contains `Charset=utf8mb4`.  Why use `utf8mb4` instead of `utf8`?
+
+### 'Charset=utf8' does not support the full UTF-8 character set
+
+MySQL's `utf8` uses a maximum of 3-bytes to store each character and does not contain all UTF-8 characters (like 𝌆).  This is slightly less terrible than silently losing data, and will cause a MySQL error at run-time when inserting an unsupported character.  For example:
+
+>  Incorrect string value: '\xF0\x9F\x92\xA9' for column 'data' at row 1
+
+### Worth reading: 
+
+- [http://dev.mysql.com/doc/refman/5.7/en/charset-unicode-sets.html]()
+- [http://mathiasbynens.be/notes/mysql-utf8mb4]()
+
